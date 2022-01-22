@@ -1,14 +1,13 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {AuthenticationService} from "./services/authentication.service";
+import {AuthenticationService} from "../../services/authentication.service";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppComponent implements OnInit{
-  title = 'Angular_Case5_Gr1';
+export class HomeComponent implements OnInit {
   currentUser = localStorage.getItem("currentUser");
 
   constructor(private activatedRoute: ActivatedRoute,
@@ -21,5 +20,4 @@ export class AppComponent implements OnInit{
   logout(){
     this.authenticationService.logout()
   }
-
 }
