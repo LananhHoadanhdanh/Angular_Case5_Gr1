@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {LoginComponent} from "./pages/login/login.component";
 import {RegisterComponent} from "./pages/register/register.component";
-import {HomeComponent} from "./pages/homepage/home.component";
 import {AdminAuthGuard} from "./helper/admin-auth-guard";
 import {AdminComponent} from "./pages/admin/admin.component";
 
@@ -17,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'homepage',
-    component: HomeComponent
+    loadChildren: () => import('./pages/homepage/homepage.module').then(module => module.HomepageModule)
   },
   {
     path:'admin',

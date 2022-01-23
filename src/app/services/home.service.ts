@@ -1,0 +1,22 @@
+import { Injectable } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import { Home } from '../models/home';
+import { Image } from '../models/image';
+
+const API_URL = 'http://localhost:8080/api/homes'
+@Injectable({
+  providedIn: 'root'
+})
+export class HomeService {
+
+  constructor(private http: HttpClient) { }
+
+  showListHome() {
+    return this.http.get<Home[]>(API_URL)
+  }
+
+  // @ts-ignore
+  getListImg(idH) {
+    return this.http.get<Image[]>(API_URL + '/findAllImg?idH=' + idH)
+  }
+}
