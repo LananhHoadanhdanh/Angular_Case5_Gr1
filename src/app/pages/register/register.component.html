@@ -209,21 +209,14 @@
     <div class="col-4"></div>
     <div class="col-4">
       <div class="new-customers mb-50">
-        <form action="#">
+        <form action="#" [formGroup]="userForm" (ngSubmit)="register()">
           <div id="mess"></div>
           <h5 class="mb-50 text-center f1 f5" style="font-size: 25px">ĐĂNG KÝ</h5>
           <div class="login-account p-30 box-shadow">
-            <div class="row">
-              <div class="col-sm-6 f1">
-                <input class="f1" type="text" placeholder="Họ" id="firstName">
-              </div>
-              <div class="col-sm-6">
-                <input class="f1" type="text" placeholder="Tên" id="lastName">
-              </div>
-            </div>
-            <input class="f1" type="text"  placeholder="Nhập tài khoản..." id="userName1">
-            <input class="f1"  type="password"  placeholder="Mật khẩu" id="password1">
-            <input class="f1"  type="password"  placeholder="Nhập lại mật khẩu" id="conPassword1">
+            <input class="f1" type="text"  placeholder="Nhập tài khoản..." id="userName1"  formControlName="username">
+            <input class="f1"  type="password"  placeholder="Mật khẩu" id="password1" formControlName="password">
+            <input class="f1"  type="password"  placeholder="Nhập lại mật khẩu" id="conPassword1" formControlName="confirmPassword">
+            <input class="f1" type="hidden" placeholder="Nhập lại mật khẩu"  formControlName="status" value="1">
             <div class="checkbox">
               <label class="mr-10">
                 <small>
@@ -238,10 +231,10 @@
             </div>
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <button class="submit-btn-1 mt-20 f1" type="submit" value="register" >Đăng ký</button>
+                <button class="submit-btn-1 mt-20 f1" type="submit" >Đăng ký</button>
               </div>
               <div class="col-sm-6 col-xs-12 f1">
-                <button class="submit-btn-1 mt-20 f-right" routerLink="/" >Quay lại</button>
+                <a class="submit-btn-1 mt-20 f-right" routerLink="/" >Quay lại</a>
               </div>
             </div>
           </div>
