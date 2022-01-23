@@ -1,0 +1,2 @@
+<li class="f1" *ngIf="currentUser === null" ><a href="#" routerLink="/login">Đăng nhập</a></li>
+<li class="f1" *ngIf="currentUser != null"><a href="#" routerLink="/" (click)="logout()">Đăng xuất</a></li>
