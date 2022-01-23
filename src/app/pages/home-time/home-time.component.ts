@@ -20,10 +20,10 @@ export class HomeTimeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-console.log(this.homeTimeService.searchByHome(4))
-   // @ts-ignore
-    this.homeTimes= this.homeTimeService.listAllHomeTime()
-    console.log(this.homeTimes)
+    this.homeTimeService.searchByHome(4).subscribe(res => {
+        this.homeTimes = res;
+      }
+    )
   }
 
   orderHo() {
@@ -32,6 +32,6 @@ console.log(this.homeTimeService.searchByHome(4))
     // @ts-ignore
     let b: Date = document.getElementById("monthEnd").value;
     console.log(a)
-    this.homeTimeService.orderHome(a,b)
+    this.homeTimeService.orderHome(a, b, this.homeTimes)
   }
 }

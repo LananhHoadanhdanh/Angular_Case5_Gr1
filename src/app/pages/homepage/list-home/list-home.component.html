@@ -1,0 +1,485 @@
+<div class="wrapper">
+  <header class="header-area header-wrapper">
+    <div class="header-top-bar bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="logo">
+              <img src="assets/images/logo/logo.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 hidden-sm hidden-xs">
+            <div class="company-info clearfix">
+              <div class="company-info-item">
+                <div class="header-icon">
+                  <img src="assets/images/icons/phone.png" alt="">
+                </div>
+                <div class="header-info">
+                  <h6 class="f1">+88 (012) 564 979 56</h6>
+                  <p class="f1">Giờ mở cửa 9 am - 10pm</p>
+                </div>
+              </div>
+              <div class="company-info-item">
+                <div class="header-icon">
+                  <img src="assets/images/icons/mail-open.png" alt="">
+                </div>
+                <div class="header-info">
+                  <h6 class="f1"><a href="mailto:hnasir770@gmail.com">info@sheltek.com</a></h6>
+                  <p class="f1">Bạn có thể gửi thư cho chúng tôi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="header-search clearfix">
+              <form action="#">
+                <button class="search-icon" type="submit">
+                  <img src="assets/images/icons/search.png" alt="">
+                </button>
+                <input type="text" placeholder="Tìm kiếm...">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sticky-header" class="header-middle-area  transparent-header hidden-xs">
+      <div class="container">
+        <div class="full-width-mega-drop-menu">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="sticky-logo">
+                <a href="index.html">
+                  <img src="assets/images/logo/logo.png" alt="">
+                </a>
+              </div>
+              <nav id="primary-menu">
+                <ul class="main-menu text-center">
+                  <li class="mega-parent f1" onclick="backHome()"><a href="#">Nhà</a>
+                  </li>
+                  <li class="f1 mega-parent f1"><a href="#">Các yếu tố</a>
+
+                    <ul class="f1 drop-menu">
+                      <li><a href="elements-accordion.html">Đại lý</a></li>
+                      <li><a href="elements-agent.html">Agent</a></li>
+                      <li><a href="elements-alerts.html">Cảnh báo</a></li>
+                      <li><a href="elements-audio.html">Âm thanh</a></li>
+                      <li><a href="elements-call-to-actions.html">Kêu gọi hành động</a></li>
+                      <li><a href="elements-contact-1.html">Liên hệ</a></li>
+                    </ul>
+
+                  </li>
+                  <li class="f1"><a href="service.html">Dịch vụ</a>
+                    <ul class="drop-menu">
+                      <li class="f1"><a href="service.html">Dịch vụ</a></li>
+                      <li class="f1"><a href="service-details.html">Chi tiết dịch vụ</a></li>
+                    </ul>
+                  </li>
+                  <li class="f1"><a href="properties.html">Tính chất</a>
+                    <ul class="f1 drop-menu">
+                      <li><a href="properties.html">Tính chất</a></li>
+                      <li><a href="properties-left-sidebar.html">Thuộc tính bên trái thanh bên</a></li>
+                      <li><a href="properties-right-sidebar.html">Thuộc tính thanh bên phải</a>
+                      </li>
+                      <li><a href="properties-details.html">Chi tiết thuộc tính</a></li>
+                    </ul>
+                  </li>
+                  <li class="f1"><a href="agent.html">Đại lý</a>
+                    <ul class="drop-menu">
+                      <li class="f1"><a href="agent.html">Đại lý</a></li>
+                      <li class="f1"><a href="agent-details.html">Chi tiết đại lý</a></li>
+                    </ul>
+                  </li>
+                  <li class="f1"><a href="#">Trang của</a>
+                    <ul class="drop-menu menu-right">
+                      <li><a href="about.html">Về</a></li>
+                      <li><a href="agent.html">Đại lý</a></li>
+                      <li><a href="agent-details.html">Chi tiết đại lý</a></li>
+                      <li><a href="features.html">Đặc trưng</a></li>
+                      <li><a href="service.html">Dịch vụ</a></li>
+                      <li><a href="service-details.html">Chi tiết dịch vụ</a></li>
+                      <li class="f1"><a href="" routerLink="/login">Đăng nhập</a></li>
+                      <li class="f1"><a routerLink="/login">Đăng nhập</a></li>
+                    </ul>
+                  </li>
+                  <li class="f1"><a href="blog.html">Blog</a>
+                    <ul class="drop-menu menu-right">
+                      <li><a href="blog.html">Blog</a></li>
+
+                      <li><a href="single-blog.html">Single Bloge</a></li>
+                    </ul>
+                  </li>
+                  <li class="f1" id="logout" *ngIf="currentUser != null"><a href="#" routerLink="/" (click)="logout()">Đăng xuất</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- MOBILE MENU AREA START -->
+  <div class="mobile-menu-area hidden-sm hidden-md hidden-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="mobile-menu">
+            <nav id="dropdown">
+              <ul>
+                <li class="f1"><a href="index.html">Nhà</a>
+                  <ul>
+                    <li><a href="index.html">Home-1</a></li>
+                    <li><a href="index-2.html">home-2</a></li>
+                    <li><a href="index-3.html">home-3</a></li>
+                    <li><a href="index-4.html">Background Video</a></li>
+                    <li><a href="index-5.html">Background Video overlay</a></li>
+                    <li><a href="index-6.html">BG Video dot overlay</a></li>
+                    <li><a href="index-7.html">Animated Text</a></li>
+                    <li><a href="index-8.html">Animated Text dot overlay</a></li>
+                    <li><a href="index-9.html">Box layout - 1</a></li>
+                    <li><a href="index-10.html">Box layout - 2</a></li>
+                    <li><a href="index-11.html">Box layout - 3</a></li>
+                  </ul>
+                </li>
+                <li class="f1"><a href="service.html">Service</a>
+                  <ul>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="service-details.html">Service details</a></li>
+                  </ul>
+                </li>
+                <li class="f1"><a href="properties.html">Properties</a>
+                  <ul>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="properties-left-sidebar.html">Properties left sidebar</a></li>
+                    <li><a href="properties-right-sidebar.html">Properties right sidebar</a></li>
+                    <li><a href="properties-details.html">Properties details</a></li>
+                  </ul>
+                </li>
+                <li class="f1"><a href="#">Pages</a>
+                  <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="agent.html">Agent</a></li>
+                    <li><a href="agent-details.html">Agent-details</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="service-details.html">Service details</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="404.html">404</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="f1"><a href="blog.html">Blog</a>
+                  <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+                    <li><a href="blog-right-sidebar.html">Blog right sidebar</a></li>
+                    <li><a href="single-blog.html">Single Bloge</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" onclick="logout()">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MOBILE MENU AREA END -->
+  <div id="slideLogout" class="slider-3 youtube-bg bg-opacity-black-30">
+    <div class="slider-content-3 text-center">
+      <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+        <h1 class="slider-1-title-2 f1">TÌM NGÔI NHÀ ƯỚC MƠ CỦA BẠN CÙNG CHÚNG TÔI</h1>
+      </div>
+      <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
+        <a class="slider-button mt-40 f1" href="#">Tìm hiểu thêm</a>
+      </div>
+    </div>
+  </div>
+  <div id="body2">
+    <div class="featured-flat-area pb-60">
+      <button class="f1 f4 submit-btn-1 " onclick="back()">Quay lại</button>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title-2 text-center"><br>
+              <h2 class="f1 f5">Các Căn Có Thể Thuê</h2>
+            </div>
+          </div>
+        </div>
+        <div class="featured-flat">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12" *ngFor="let home of homes; let i = index">
+              <div class="flat-item">
+                <div class="flat-item-image">
+                  <span style="  font-family: 'Comforter', cursive;  font-family: 'Open Sans', sans-serif;" class="for-sale">{{home?.statusHome?.name}}</span>
+                  <div *ngFor="let img of images">
+                    <div *ngIf="img.home?.id == home.id">
+                      <a href="#"><img src="assets/images/{{img.links}}" alt=""></a>
+                    </div>
+                  </div>
+
+                  <div class="flat-link">
+                    <a class="f1" routerLink="homeDetail/{{home.id}}">Xem chi tiết</a>
+                  </div>
+                  <ul class="flat-desc">
+                    <li>
+                      <img src="assets/images/icons/4.png" alt="">
+                      <span class="f1">{{home.area}}</span>
+                    </li>
+                    <li>
+                      <img src="assets/images/icons/5.png" alt="">
+                      <span class="f1">{{home.bedroom}}</span>
+                    </li>
+                    <li>
+                      <img src="assets/images/icons/6.png" alt="">
+                      <span class="f1">{{home.showerRoom}}</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="flat-item-info">
+                  <div class="flat-title-price">
+                    <h5><a class="f1" routerLink="homeDetail/{{home.id}}">{{home.name}}</a></h5>
+                    <span class="f1 price">{{home.price}}VNĐ</span>
+                  </div>
+                  <p class="f1"><img src="assets/images/icons/location.png" alt="">{{home.address}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="pagination-area mb-60">
+                <ul class="pagination-list text-center">
+                  <li><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FEATURED FLAT AREA END -->
+
+    <!-- BOOKING AREA START -->
+    <div class="booking-area bg-1 call-to-bg plr-140 pt-75">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="section-title text-white">
+              <h3 class="f1">Một vài</h3>
+              <h2 class="h1 f1">Nhân tố vui vẻ</h2>
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-8 col-xs-12">
+            <div class="booking-conternt  clearfix">
+              <div class="counter-content">
+                <!-- counter-item -->
+                <div class="counter-item">
+                  <h2>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span class="counter f1">999</span>
+                  </h2>
+                  <p class="f1">Hoàn thành dự án</p>
+                </div>
+                <!-- counter-item -->
+                <div class="counter-item">
+                  <h2>
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                    <span class="counter f1">555</span>
+                  </h2>
+                  <p class="f1">Bất động sản đã bán</p>
+                </div>
+                <!-- counter-item -->
+                <div class="counter-item">
+                  <h2>
+                    <i class="fa fa-smile-o" aria-hidden="true"></i>
+                    <span class="counter f1">350</span>
+                  </h2>
+                  <p class="f1">Khách hàng vui vẻ</p>
+                </div>
+                <!-- counter-item -->
+                <div class="counter-item">
+                  <h2>
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                    <span class="counter f1">100</span>
+                  </h2>
+                  <p class="f1">Giành giải thưởng</p>
+                </div>
+              </div>
+              <div class="booking-imgae">
+                <img src="assets/images/others/booking.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BOOKING AREA END -->
+
+    <!-- OUR AGENTS AREA START -->
+    <div class="our-agents-area pt-115 pb-55">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title-2 text-center">
+              <h2 class="f1 f5">Các đại lý của chúng tôi</h2>
+              <p class="f1 f4">Sheltek có một hệ thống đại lý phong phú và phủ sóng khắp cả nước</p>
+            </div>
+          </div>
+        </div>
+        <div class="our-agents">
+          <div class="row">
+            <div class="agents-carousel">
+              <!-- single-agent -->
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-agent">
+                  <div class="agent-image">
+                    <img src="assets/images/admin/1.jpg" alt="">
+                  </div>
+                  <div class="agent-info">
+                    <div class="agent-name">
+                      <h5 class="f1 f5"><a href="agent-details.html">Nguyễn Quốc Khánh</a></h5>
+                      <p class="f1">Đà nẵng</p>
+                    </div>
+                  </div>
+                  <div class="agent-info-hover">
+
+                    <ul class="agent-address">
+                      <li><img class="f1" src="assets/images/icons/phone-2.png" alt="">+1245  785  659 </li>
+                      <li><img class="f1" src="assets/images/icons/mail-close.png" alt="">khanh@gmail.com </li>
+                    </ul>
+                    <ul class="social-media">
+                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- single-agent -->
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-agent">
+                  <div class="agent-image">
+                    <img src="assets/images/admin/2.jpg" alt="">
+                  </div>
+                  <div class="agent-info">
+                    <div class="agent-name"><h5 class="f1 f5"><a>Nguyễn Đình Ánh</a></h5>
+                      <p class="f1">Hà Nội</p>
+                    </div>
+                  </div>
+                  <div class="agent-info-hover">
+
+                    <ul class="agent-address">
+                      <li><img class="f1" src="assets/images/icons/phone-2.png" alt="">+1245  785  659 </li>
+                      <li><img class="f1" src="assets/images/icons/mail-close.png" alt="">anh@gmail.com </li>
+                    </ul>
+                    <ul class="social-media">
+                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- single-agent -->
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-agent">
+                  <div class="agent-image">
+                    <img src="assets/images/admin/3.jpg" alt="">
+                  </div>
+                  <div class="agent-info">
+                    <div class="agent-name">
+                      <h5 class="f1 f5"><a href="agent-details.html">Lê Vũ Duy</a></h5>
+                      <p class="f1">Thành Phố HCM</p>
+                    </div>
+                  </div>
+                  <div class="agent-info-hover">
+
+                    <ul class="agent-address">
+                      <li><img class="f1" src="assets/images/icons/phone-2.png" alt="">+1245  785  659 </li>
+                      <li><img class="f1" src="assets/images/icons/mail-close.png" alt="">duy@gmail.com </li>
+                    </ul>
+                    <ul class="social-media">
+                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- OUR AGENTS AREA END -->
+
+    <!-- BRAND AREA START -->
+    <div class="brand-area pb-115">
+      <div class="container">
+        <div class="row">
+          <div class="brand-carousel">
+            <!-- brand-item -->
+            <div class="col-md-2 col-sm-4 col-xs-12">
+              <div class="brand-item">
+                <img src="assets/images/brand/1.png" alt="">
+              </div>
+            </div>
+            <!-- brand-item -->
+            <div class="col-md-2 col-sm-4 col-xs-12">
+              <div class="brand-item">
+                <img src="assets/images/brand/2.png" alt="">
+              </div>
+            </div>
+            <!-- brand-item -->
+            <div class="col-md-2 col-sm-4 col-xs-12">
+              <div class="brand-item">
+                <img src="assets/images/brand/3.png" alt="">
+              </div>
+            </div>
+            <!-- brand-item -->
+            <div class="col-md-2 col-sm-4 col-xs-12">
+              <div class="brand-item">
+                <img src="assets/images/brand/4.png" alt="">
+              </div>
+            </div>
+            <!-- brand-item -->
+            <div class="col-md-2 col-sm-4 col-xs-12">
+              <div class="brand-item">
+                <img src="assets/images/brand/5.png" alt="">
+              </div>
+            </div>
+            <!-- brand-item -->
+            <div class="col-md-2 col-sm-4 col-xs-12">
+              <div class="brand-item">
+                <img src="assets/images/brand/1.png" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BRAND AREA END -->
+
+    <!-- SUBSCRIBE AREA START -->
+    <div class="subscribe-area bg-blue call-to-bg plr-140 ptb-50">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="section-title text-white">
+
+              <h2 class="h1">Bản tin</h2>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- SUBSCRIBE AREA END -->
+  </div>
+</div>

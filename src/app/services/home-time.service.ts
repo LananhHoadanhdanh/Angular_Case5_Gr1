@@ -41,7 +41,7 @@ export class HomeTimeService {
   saveOrder(order:Order):Observable<Order>{
     return this.httpClient.post(API_URL_ORDER,order);
   }
-  orderHome(strStartDate: Date, monthEnd: Date) {
+  orderHome(strStartDate: Date, monthEnd: Date,data:HomeTime[]) {
     let idU = 2;
     let idH = 4;
     // let idU = localStorage.getItem("idUser");
@@ -65,15 +65,14 @@ export class HomeTimeService {
       //   type: "GET",
       //   url: "http://localhost:8080/api/homeTimes/searchByHome/" + idH,
       //   success: function (data) {
-      let data:HomeTime [];
-      // @ts-ignore
-      data = this.searchByHome(idH)
-     console.log(this.searchByHome(idH)+"fffffffffff")
-      console.log(data+"vvvvvvvvvvvvv")
+      // let data:HomeTime [];
+      // // @ts-ignore
+      // data = this.searchByHome(idH)
       if (data.length > 0) {
         console.log("aaaaaaaaaaaaaaaaaaaa")
         let flag = true;
-        for (let i = strStartDate.getTime(); i <= monthEnd.getTime(); i += oneDay) {
+        let i=strStartDate.getMilliseconds()
+        for (i ; i <= monthEnd.getMilliseconds(); i += oneDay) {
           let orderDate = new Date(i);
           console.log(orderDate+"xxxxxxxxxxxxxx");
           for (let j = 0; j < data.length; j++) {
