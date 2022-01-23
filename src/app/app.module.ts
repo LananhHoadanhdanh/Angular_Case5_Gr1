@@ -11,6 +11,8 @@ import { AdminComponent } from './pages/admin/admin.component';
 import { HomeComponent } from './pages/homepage/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { HomeTimeComponent } from './pages/home-time/home-time.component';
+import { OrderComponent } from './pages/order/order.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { RegisterComponent } from './pages/register/register.component';
     AdminComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    HomeTimeComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
