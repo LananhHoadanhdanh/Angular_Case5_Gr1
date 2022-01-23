@@ -5,6 +5,7 @@ import {RegisterComponent} from "./pages/register/register.component";
 import {HomeComponent} from "./pages/homepage/home.component";
 import {AdminAuthGuard} from "./helper/admin-auth-guard";
 import {AdminComponent} from "./pages/admin/admin.component";
+import {HomeTimeComponent} from "./pages/home-time/home-time.component";
 
 const routes: Routes = [
   {
@@ -23,6 +24,9 @@ const routes: Routes = [
     path:'admin',
     canActivate: [AdminAuthGuard],
     component: AdminComponent
+  },{
+    path:'hometime',
+    component: HomeTimeComponent
   },
   // {
   //   path: 'pages',

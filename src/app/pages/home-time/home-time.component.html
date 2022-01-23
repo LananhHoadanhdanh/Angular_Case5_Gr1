@@ -1,1 +1,33 @@
-<p>home-time works!</p>
+<div class="row">
+  <div class="col-sm-3 col-xs-12">
+
+    <div class="row">
+      <p class="birth f1"><strong>Ngày nhận phòng: </strong></p>
+      <div style="width: 100% !important;" class="form-group col-sm-3 col-xs-6">
+        <label for="monthStart" class="sr-only"></label>
+        <input id="monthStart" class="form-control input-group-lg" name="dateOfBirth" type="date">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 col-xs-12">
+
+    <div class="row">
+      <p class="birth f1"><strong>Ngày trả phòng</strong></p>
+      <div style="width: 100% !important;" class="form-group col-sm-3 col-xs-6">
+        <label for="monthEnd" class="sr-only"></label>
+        <input id="monthEnd" class="form-control input-group-lg" name="dateOfBirth" type="date">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-5 col-xs-12">
+    <div class="find-home-item mb-0-xs">
+      <button (click)="orderHo()" class=" f1 btn-primary " style="width: 110px; height: 40px; border-radius: 4px">
+        Đặt thuê
+      </button>
+      <h1 >
+      {{homeTimes[1].id}}
+    </h1>
+
+    </div>
+  </div>
+</div>
