@@ -10,7 +10,7 @@ import {FormControl, FormGroup} from "@angular/forms";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  currentUser = localStorage.getItem("currentUser");
   loginForm: FormGroup = new FormGroup({
     username: new FormControl(''),
     password: new FormControl('')
@@ -24,7 +24,8 @@ export class LoginComponent implements OnInit {
   submitted = false;
   constructor(private activatedRoute: ActivatedRoute,
               private router: Router,
-              private authenticationService: AuthenticationService) {
+              private authenticationService: AuthenticationService
+             ) {
     console.log(this.authenticationService.currentUserValue);
   }
 
@@ -58,7 +59,8 @@ export class LoginComponent implements OnInit {
           alert("Tài khoản của bạn đã bị khoá hoặc sai mật khẩu!");
           this.loading = false;
         });
-    // location.reload();
   }
-
+  logout(){
+    this.authenticationService.logout()
+  }
 }

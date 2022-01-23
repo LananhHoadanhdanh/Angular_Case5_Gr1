@@ -1,4 +1,273 @@
+<div class="wrapper">
+  <header class="header-area header-wrapper">
+    <div class="header-top-bar bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="logo">
+              <img src="assets/images/logo/logo.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 hidden-sm hidden-xs">
+            <div class="company-info clearfix">
+              <div class="company-info-item">
+                <div class="header-icon">
+                  <img src="assets/images/icons/phone.png" alt="">
+                </div>
+                <div class="header-info">
+                  <h6 class="f1">+88 (012) 564 979 56</h6>
+                  <p class="f1">Giờ mở cửa 9 am - 10pm</p>
+                </div>
+              </div>
+              <div class="company-info-item">
+                <div class="header-icon">
+                  <img src="assets/images/icons/mail-open.png" alt="">
+                </div>
+                <div class="header-info">
+                  <h6 class="f1"><a href="mailto:hnasir770@gmail.com">info@sheltek.com</a></h6>
+                  <p class="f1">Bạn có thể gửi thư cho chúng tôi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="header-search clearfix">
+              <form action="#">
+                <button class="search-icon" type="submit">
+                  <img src="assets/images/icons/search.png" alt="">
+                </button>
+                <input type="text" placeholder="Tìm kiếm...">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sticky-header" class="header-middle-area  transparent-header hidden-xs">
+      <div class="container">
+        <div class="full-width-mega-drop-menu">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="sticky-logo">
+                <a href="index.html">
+                  <img src="assets/images/logo/logo.png" alt="">
+                </a>
+              </div>
+              <nav id="primary-menu">
+                <ul class="main-menu text-center">
+                  <li class="mega-parent f1" onclick="backHome()"><a href="#">Nhà</a>
+                  </li>
+                  <li class="f1 mega-parent f1"><a href="#">Các yếu tố</a>
 
-  <a routerLink="/">Quay lại</a>
+                    <ul class="f1 drop-menu">
+                      <li><a href="elements-accordion.html">Đại lý</a></li>
+                      <li><a href="elements-agent.html">Agent</a></li>
+                      <li><a href="elements-alerts.html">Cảnh báo</a></li>
+                      <li><a href="elements-audio.html">Âm thanh</a></li>
+                      <li><a href="elements-call-to-actions.html">Kêu gọi hành động</a></li>
+                      <li><a href="elements-contact-1.html">Liên hệ</a></li>
+                    </ul>
 
-<p>register works!</p>
+                  </li>
+                  <li class="f1"><a href="service.html">Dịch vụ</a>
+                    <ul class="drop-menu">
+                      <li class="f1"><a href="service.html">Dịch vụ</a></li>
+                      <li class="f1"><a href="service-details.html">Chi tiết dịch vụ</a></li>
+                    </ul>
+                  </li>
+                  <li class="f1"><a href="properties.html">Tính chất</a>
+                    <ul class="f1 drop-menu">
+                      <li><a href="properties.html">Tính chất</a></li>
+                      <li><a href="properties-left-sidebar.html">Thuộc tính bên trái thanh bên</a></li>
+                      <li><a href="properties-right-sidebar.html">Thuộc tính thanh bên phải</a>
+                      </li>
+                      <li><a href="properties-details.html">Chi tiết thuộc tính</a></li>
+                    </ul>
+                  </li>
+                  <li class="f1"><a href="agent.html">Đại lý</a>
+                    <ul class="drop-menu">
+                      <li class="f1"><a href="agent.html">Đại lý</a></li>
+                      <li class="f1"><a href="agent-details.html">Chi tiết đại lý</a></li>
+                    </ul>
+                  </li>
+                  <li class="f1"><a href="#">Trang của</a>
+                    <ul class="drop-menu menu-right">
+                      <li><a href="about.html">Về</a></li>
+                      <li><a href="agent.html">Đại lý</a></li>
+                      <li><a href="agent-details.html">Chi tiết đại lý</a></li>
+                      <li><a href="features.html">Đặc trưng</a></li>
+                      <li><a href="service.html">Dịch vụ</a></li>
+                      <li><a href="service-details.html">Chi tiết dịch vụ</a></li>
+                      <li class="f1"><a href="" routerLink="/login">Đăng nhập</a></li>
+                      <li class="f1"><a routerLink="/login">Đăng nhập</a></li>
+                    </ul>
+                  </li>
+                  <li class="f1"><a href="blog.html">Blog</a>
+                    <ul class="drop-menu menu-right">
+                      <li><a href="blog.html">Blog</a></li>
+
+                      <li><a href="single-blog.html">Single Bloge</a></li>
+                    </ul>
+                  </li>
+                  <li class="f1" id="logout" ><a href="#" routerLink="/">Đăng nhập</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- MOBILE MENU AREA START -->
+  <div class="mobile-menu-area hidden-sm hidden-md hidden-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="mobile-menu">
+            <nav id="dropdown">
+              <ul>
+                <li class="f1"><a href="index.html">Nhà</a>
+                  <ul>
+                    <li><a href="index.html">Home-1</a></li>
+                    <li><a href="index-2.html">home-2</a></li>
+                    <li><a href="index-3.html">home-3</a></li>
+                    <li><a href="index-4.html">Background Video</a></li>
+                    <li><a href="index-5.html">Background Video overlay</a></li>
+                    <li><a href="index-6.html">BG Video dot overlay</a></li>
+                    <li><a href="index-7.html">Animated Text</a></li>
+                    <li><a href="index-8.html">Animated Text dot overlay</a></li>
+                    <li><a href="index-9.html">Box layout - 1</a></li>
+                    <li><a href="index-10.html">Box layout - 2</a></li>
+                    <li><a href="index-11.html">Box layout - 3</a></li>
+                  </ul>
+                </li>
+                <li class="f1"><a href="service.html">Service</a>
+                  <ul>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="service-details.html">Service details</a></li>
+                  </ul>
+                </li>
+                <li class="f1"><a href="properties.html">Properties</a>
+                  <ul>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="properties-left-sidebar.html">Properties left sidebar</a></li>
+                    <li><a href="properties-right-sidebar.html">Properties right sidebar</a></li>
+                    <li><a href="properties-details.html">Properties details</a></li>
+                  </ul>
+                </li>
+                <li class="f1"><a href="#">Pages</a>
+                  <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="agent.html">Agent</a></li>
+                    <li><a href="agent-details.html">Agent-details</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="service-details.html">Service details</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="404.html">404</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="f1"><a href="blog.html">Blog</a>
+                  <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+                    <li><a href="blog-right-sidebar.html">Blog right sidebar</a></li>
+                    <li><a href="single-blog.html">Single Bloge</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" onclick="logout()">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MOBILE MENU AREA END -->
+  <div id="slideLogin">
+    <div class="headerOne">
+      <div class="breadcrumbs-area bread-bg-1 bg-opacity-black-70">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="breadcrumbs">
+                <h2 class="breadcrumbs-title f1"></h2>
+                <ul class="breadcrumbs-list">
+                  <li class="f1"><a href="index.html">Nhà</a></li>
+                  <li class="f1">Đăng Nhập</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <div class="new-customers mb-50">
+        <form action="#">
+          <div id="mess"></div>
+          <h5 class="mb-50 text-center f1 f5" style="font-size: 25px">ĐĂNG KÝ</h5>
+          <div class="login-account p-30 box-shadow">
+            <div class="row">
+              <div class="col-sm-6 f1">
+                <input class="f1" type="text" placeholder="Họ" id="firstName">
+              </div>
+              <div class="col-sm-6">
+                <input class="f1" type="text" placeholder="Tên" id="lastName">
+              </div>
+            </div>
+            <input class="f1" type="text"  placeholder="Nhập tài khoản..." id="userName1">
+            <input class="f1"  type="password"  placeholder="Mật khẩu" id="password1">
+            <input class="f1"  type="password"  placeholder="Nhập lại mật khẩu" id="conPassword1">
+            <div class="checkbox">
+              <label class="mr-10">
+                <small>
+                  <input class="f1" type="checkbox" name="signup">Đăng ký nhận bản tin của chúng tôi!
+                </small>
+              </label>
+              <label>
+                <small>
+                  <input class="f1" type="checkbox" name="signup">Nhận khuyến mại đặc biệt từ các đối tác của chúng tôi!
+                </small>
+              </label>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                <button class="submit-btn-1 mt-20 f1" type="submit" value="register" >Đăng ký</button>
+              </div>
+              <div class="col-sm-6 col-xs-12 f1">
+                <button class="submit-btn-1 mt-20 f-right" routerLink="/" >Quay lại</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-4"></div>
+  </div>
+  <div class="subscribe-area bg-blue call-to-bg plr-140 ptb-50">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="section-title text-white">
+
+            <h2 class="f1">Bản tin</h2>
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-8 col-xs-12">
+          <div class="subscribe">
+            <form action="#">
+              <input type="text" name="subscribe" placeholder="Nhập email của bạn...">
+              <button type="submit" value="send">Gửi</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
