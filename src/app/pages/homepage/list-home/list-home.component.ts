@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Home} from "../../../models/home";
 import {Image} from "../../../models/image";
 import {HomeService} from "../../../services/home.service";
+import {AuthenticationService} from "../../../services/authentication.service";
 @Component({
   selector: 'app-list-home',
   templateUrl: './list-home.component.html',
@@ -10,8 +11,10 @@ import {HomeService} from "../../../services/home.service";
 export class ListHomeComponent implements OnInit {
   homes?: Home[] = [];
   images?: Image[] = [];
+  currentUser = localStorage.getItem("currentUser");
 
-  constructor(private homeService: HomeService) {
+  constructor(private homeService: HomeService,
+              private authenticationService: AuthenticationService) {
   }
 
   ngOnInit(): void {
@@ -30,6 +33,10 @@ export class ListHomeComponent implements OnInit {
         })
       }
     })
+  }
+
+  logout(){
+    this.authenticationService.logout()
   }
 
 }
