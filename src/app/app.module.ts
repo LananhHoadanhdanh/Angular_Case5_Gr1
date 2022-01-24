@@ -10,7 +10,7 @@ import {AuthGuard} from "./helper/auth-guard";
 import { AdminComponent } from './pages/admin/admin.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
-import {HomepageModule} from "./pages/homepage/homepage.module";
+import { LoginlogoutComponent } from "./pages/loginlogout/loginlogout.component";
 
 
 @NgModule({
@@ -18,15 +18,15 @@ import {HomepageModule} from "./pages/homepage/homepage.module";
     AppComponent,
     AdminComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginlogoutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
-    HomepageModule
+    HttpClientModule
   ],
   providers: [
     AdminAuthGuard,

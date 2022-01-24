@@ -1,4 +1,5 @@
-<!--<header class="header-area header-wrapper">-->
+
+<!--  <header class="header-area header-wrapper">-->
 <!--    <div class="header-top-bar bg-white">-->
 <!--      <div class="container">-->
 <!--        <div class="row">-->
@@ -108,7 +109,7 @@
 <!--                      <li><a href="single-blog.html">Single Bloge</a></li>-->
 <!--                    </ul>-->
 <!--                  </li>-->
-<!--                  <li class="f1" id="logout" ><a href="#" routerLink="/login">Đăng nhập</a>-->
+<!--                  <li class="f1" id="logout" *ngIf="currentUser != null"><a href="#" routerLink="/" (click)="logout()">Đăng xuất</a>-->
 <!--                  </li>-->
 <!--                </ul>-->
 <!--              </nav>-->
@@ -184,74 +185,16 @@
 <!--      </div>-->
 <!--    </div>-->
 <!--  </div>-->
-  <!-- MOBILE MENU AREA END -->
-  <div id="slideLogin">
-    <div class="headerOne">
-      <div class="breadcrumbs-area bread-bg-1 bg-opacity-black-70">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="breadcrumbs">
-                <h2 class="breadcrumbs-title f1"></h2>
-                <ul class="breadcrumbs-list">
-                  <li class="f1"><a href="index.html">Nhà</a></li>
-                  <li class="f1">Đăng Nhập</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<!--  &lt;!&ndash; MOBILE MENU AREA END &ndash;&gt;-->
+  <div class="slider-3 youtube-bg bg-opacity-black-30">
+  <div class="slider-content-3 text-center">
+    <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+      <h1 class="slider-1-title-2 f1">TÌM NGÔI NHÀ ƯỚC MƠ CỦA BẠN CÙNG CHÚNG TÔI</h1>
+    </div>
+    <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
+      <a class="slider-button mt-40 f1" href="#">Tìm hiểu thêm</a>
     </div>
   </div>
-  <section id="page-content" class="page-wrapper">
-    <div class="login-section pt-115 pb-70">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-xs-12"></div>
-          <div class="col-md-6 col-xs-12" id="formLog">
-            <div class="registered-customers mb-50">
-              <div id="messenger"></div>
-              <h5 class="mb-50 text-center f1 f5" style="font-size: 25px;">ĐĂNG NHẬP</h5>
-              <div action="#">
-                <div class="login-account p-30 box-shadow">
-                  <form [formGroup]="loginForm" (ngSubmit)="login()">
-                    <p class="f1 f3">Bạn đã có tài khoản, hãy đăng nhập.</p>
-                    <input class="f1" type="text" name="name" placeholder="Tên tài khoản" id="exampleInputEmail1"
-                           formControlName="username">
-                    <input class="f1" type="password" name="password" placeholder="Mật khẩu" formControlName="password"
-                           id="exampleInputPassword1">
-                    <p><small><a class="f3" href="#">Quên mật khẩu?</a></small></p>
-                    <button class="submit-btn-1 f1" style="margin-right: 20px">Đăng nhập</button>
-                    <a class="submit-btn-1 f1" routerLink="/register">Đăng ký</a>
-                  </form>
-                </div>
+</div>
+<p>đăng nhập xong thì vào đây</p>
 
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-xs-12"></div>
-        </div>
-      </div>
-    </div>
-    <div class="subscribe-area bg-blue call-to-bg plr-140 ptb-50">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-3 col-sm-4 col-xs-12">
-            <div class="section-title text-white">
-
-              <h2 class="f1">Bản tin</h2>
-            </div>
-          </div>
-          <div class="col-md-9 col-sm-8 col-xs-12">
-            <div class="subscribe">
-              <form action="#">
-                <input type="text" name="subscribe" placeholder="Nhập email của bạn...">
-                <button type="submit" value="send">Gửi</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
