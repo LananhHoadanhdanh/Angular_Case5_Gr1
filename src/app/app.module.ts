@@ -30,8 +30,7 @@ import {HomepageModule} from "./pages/homepage/homepage.module";
   ],
   providers: [
     AdminAuthGuard,
-    AuthGuard,
-
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })
