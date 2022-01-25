@@ -6,6 +6,7 @@ import {ListHomeComponent} from "./list-home/list-home.component";
 import {HomeDetailComponent} from "./home-detail/home-detail.component";
 import {HomeComponent} from "./home/home.component";
 import {FormsModule} from "@angular/forms";
+import { CreateHomeComponent } from './create-home/create-home.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import {FormsModule} from "@angular/forms";
     ListHomeComponent,
     HomeDetailComponent,
     HomeComponent,
+    CreateHomeComponent,
   ],
   imports: [
     CommonModule,
