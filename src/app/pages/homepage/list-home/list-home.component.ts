@@ -3,12 +3,20 @@ import {Home} from "../../../models/home";
 import {Image} from "../../../models/image";
 import {HomeService} from "../../../services/home.service";
 import {AuthenticationService} from "../../../services/authentication.service";
+
 @Component({
   selector: 'app-list-home',
   templateUrl: './list-home.component.html',
   styleUrls: ['./list-home.component.css']
 })
 export class ListHomeComponent implements OnInit {
+  address?: string;
+  bedroom?: string;
+  showerRoom?: string;
+  minArea?: string;
+  maxArea?: string;
+  price?: string;
+
   homes?: Home[] = [];
   images?: Image[] = [];
   currentUser = localStorage.getItem("currentUser");
@@ -22,11 +30,13 @@ export class ListHomeComponent implements OnInit {
   }
 
   loadAll() {
-    this.homeService.showListHome().subscribe(res => {
-      this.homes = res
-      // console.log(res)
-      for (let i = 0; i < res.length; i++) {
-        this.homeService.getListImg(res[i].id).subscribe(result => {
+    this.homeService.showListHome().subscribe(data => {
+      this.homes = data
+
+      // @ts-ignore
+      for (let i = 0; i < this.homes.length; i++) {
+        // @ts-ignore
+        this.homeService.getListImg(this.homes[i].id).subscribe(result => {
           console.log(result)
           this.images?.push(result[0])
           console.log(this.images)
@@ -35,8 +45,11 @@ export class ListHomeComponent implements OnInit {
     })
   }
 
-  logout(){
+  logout() {
     this.authenticationService.logout()
+  }
+
+  search() {
   }
 
 }

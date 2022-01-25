@@ -4,6 +4,7 @@ import {LoginComponent} from "./pages/login/login.component";
 import {RegisterComponent} from "./pages/register/register.component";
 import {AdminAuthGuard} from "./helper/admin-auth-guard";
 import {AdminComponent} from "./pages/admin/admin.component";
+import {LoginSuccessComponent} from "./pages/login-success/login-success.component";
 
 const routes: Routes = [
   {
@@ -16,6 +17,7 @@ const routes: Routes = [
   },
   {
     path: 'homepage',
+    component: LoginSuccessComponent,
     loadChildren: () => import('./pages/homepage/homepage.module').then(module => module.HomepageModule)
   },
   {

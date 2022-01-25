@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------
 
-  Template Name: Sheltek - Real Estate HTML5 Template 
+  Template Name: Sheltek - Real Estate HTML5 Template
   Template URI: https://devitems.com
   Description: This is html5 template
   Author: DevItems
@@ -8,10 +8,10 @@
   Version: 1.0
 
 -----------------------------------------------------------------------------------
-    
+
     CSS INDEX
     ===================
-  
+
   1. Theme Default CSS (css/shortcode/default.css)
   2. Header CSS (css/shortcode/header.css)
   3. Slider CSS (css/shortcode/slider.css)
@@ -31,7 +31,7 @@
   17. Brand area
   18. Subscribe area
   19. Home page 2
-  20. About-sheltek-area 
+  20. About-sheltek-area
   21. Breadcrumbs area
   22. Counter-item (Call to action)
   23. Pagination area
@@ -50,6 +50,7 @@
 ----------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700,800');
+@import "~bootstrap/dist/css/bootstrap.css";
 /*----------------------------------------
   6. Custom-content all
 ----------------------------------------*/
@@ -66,7 +67,7 @@
     width: 1240px;
 }
 /* ================================
-  7. Home-1 
+  7. Home-1
 ================================= */
 /* -----------------------------------
   8. call-to-action-area
@@ -146,28 +147,28 @@
 }
 .find-home-item input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    
+
     color: #999;
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 .find-home-item input::-moz-placeholder {
     /* Firefox 19+ */
-    
+
     color: #999;
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 .find-home-item input:-ms-input-placeholder {
     /* IE 10+ */
-    
+
     color: #999;
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 .find-home-item input:-moz-placeholder {
     /* Firefox 18- */
-    
+
     color: #999;
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -725,7 +726,7 @@
   19. Home page 2
 =============================== */
 /* -----------------------------------
-  20. About-sheltek-area 
+  20. About-sheltek-area
 ----------------------------------- */
 
 .author-quote > p {
@@ -821,7 +822,7 @@
 .counter-item-2 {
     float: left;
     /*text-align: center;*/
-    
+
     width: 33%;
 }
 .counter-item-2 > h2 {
@@ -1034,28 +1035,28 @@
 }
 .widget-search-property .find-home-item input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    
+
     color: #606060;
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 .widget-search-property .find-home-item input::-moz-placeholder {
     /* Firefox 19+ */
-    
+
     color: #606060;
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 .widget-search-property .find-home-item input:-ms-input-placeholder {
     /* IE 10+ */
-    
+
     color: #606060;
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 .widget-search-property .find-home-item input:-moz-placeholder {
     /* Firefox 18- */
-    
+
     color: #606060;
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -1170,7 +1171,7 @@
 }
 .twitter-icon i {
     /*color: #5ba4f5;*/
-    
+
     color: #95c419;
     font-size: 16px;
     padding-top: 10px;
