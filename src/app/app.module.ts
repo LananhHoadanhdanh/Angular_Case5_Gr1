@@ -26,7 +26,6 @@ import { HomeComponent } from './pages/homepage/home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     HomepageModule

@@ -1,6 +1,108 @@
+<div class="find-home-area bg-blue call-to-bg plr-140 pt-60 pb-20">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-xs-12">
+        <div class="section-title text-white">
+          <h3 class="f1">TÌM KIẾM NGÔI NHÀ CỦA BẠN</h3>
+          <h3 class="f1">TẠI ĐÂY</h3>
+        </div>
+      </div>
+      <div class="col-md-9 col-xs-12">
+        <div class="find-homes">
+          <div class="row">
+            <div class="col-sm-3 col-xs-12">
+              <div class="find-home-item custom-select">
+                <input style=" font-family: 'Comforter', cursive;font-family: 'Open Sans', sans-serif;" id="location"
+                  type="text" name="location" [(ngModel)]="address"
+                       placeholder="Vị trí">
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="find-home-item custom-select">
+                <select class="selectpicker" title=""
+                        data-hide-disabled="true" data-live-search="true">
+                  <optgroup disabled="disabled" label="disabled">
+                    <option>Hidden</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="find-home-item">
+                <input style="  font-family: 'Comforter', cursive; font-family: 'Open Sans', sans-serif;"
+                       id="min-area" type="text" name="min-area" [(ngModel)]="minArea"
+                       placeholder="Diện tích nhỏ nhất (sqft)">
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="find-home-item">
+                <input style="  font-family: 'Comforter', cursive;  font-family: 'Open Sans', sans-serif;"
+                       id="max-area" type="text" name="max-area" [(ngModel)]="maxArea"
+                       placeholder="Diện tích lớn nhất (sqft)">
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="find-home-item  custom-select f1">
+                <select id="bedroom" class="selectpicker" title="Số phòng ngủ" [(ngModel)]="bedroom"
+                        data-hide-disabled="true">
+                  <optgroup class="f1">
+                    <option class="f1" value="1" label="1">1 Phòng ngủ</option>
+                    <option class="f1" value="2">2 Phòng ngủ</option>
+                    <option value="3">3 Phòng ngủ</option>
+                    <option value="4">4 Phòng ngủ</option>
+                    <option value="5">5 Phòng ngủ</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="find-home-item custom-select">
+                <select id="showerRoom" class="f1 selectpicker" [(ngModel)]="showerRoom"
+                        title="Phòng tắm" data-hide-disabled="true">
+                  <optgroup>
+                    <option class="f1" value="1">1 Phòng tắm</option>
+                    <option class="f1" value="2">2 Phòng tắm</option>
+                    <option class="f1" value="3">3 Phòng tắm</option>
+                    <option class="f1" value="4">4 Phòng tắm</option>
+                    <option class="f1" value="5">5 Phòng tắm</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="row">
+                <div class="col-sm-7 col-xs-12">
+                  <div class="find-home-item">
+                    <!-- shop-filter -->
+                    <div class="shop-filter">
+                      <div class="price_filter">
+                        <div class="find-home-item">
+                          <input style="  font-family: 'Comforter', cursive; font-family: 'Open Sans', sans-serif;" [(ngModel)]="price"
+                                 type="text" name="price" id="price"
+                                 placeholder="Nhập giá">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-5 col-xs-12">
+                  <div class="find-home-item mb-0-xs">
+                    <button class="f1 button-1 btn-block btn-hover-1">Tìm kiếm
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
 <div id="body2">
   <div class="featured-flat-area pb-60">
-    <button class="f1 f4 submit-btn-1 " onclick="back()">Quay lại</button>
+<!--    <button class="f1 f4 submit-btn-1 " onclick="back()">Quay lại</button>-->
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -23,7 +125,7 @@
                 </div>
 
                 <div class="flat-link">
-                  <a class="f1" routerLink="homeDetail/{{home.id}}">Xem chi tiết</a>
+                  <a class="f1" routerLink="{{home.id}}">Xem chi tiết</a>
                 </div>
                 <ul class="flat-desc">
                   <li>
@@ -42,7 +144,7 @@
               </div>
               <div class="flat-item-info">
                 <div class="flat-title-price">
-                  <h5><a class="f1" routerLink="homeDetail/{{home.id}}">{{home.name}}</a></h5>
+                  <h5><a class="f1" routerLink="{{home.id}}">{{home.name}}</a></h5>
                   <span class="f1 price">{{home.price}}VNĐ</span>
                 </div>
                 <p class="f1"><img src="assets/images/icons/location.png" alt="">{{home.address}}</p>

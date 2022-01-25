@@ -5,6 +5,7 @@ import { HomepageRoutingModule } from './homepage-routing.module';
 import {ListHomeComponent} from "./list-home/list-home.component";
 import {HomeDetailComponent} from "./home-detail/home-detail.component";
 import {HomeComponent} from "./home/home.component";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import {HomeComponent} from "./home/home.component";
   imports: [
     CommonModule,
     HomepageRoutingModule,
+    FormsModule,
   ]
 })
 export class HomepageModule { }
