@@ -12,7 +12,6 @@ const API_URL_ORDER = 'http://localhost:8080/api/orders/'
   providedIn: 'root'
 })
 export class HomeTimeService {
-
   constructor(private httpClient: HttpClient) {
   }
 
@@ -42,14 +41,11 @@ export class HomeTimeService {
 
   saveOrder(order: Order): Observable<Order> {
     console.log("gggggggggggg")
-    return this.httpClient.post<Order>(API_URL_ORDER, order);
+    return this.httpClient.post<Order>("http://localhost:8080/api/orders", order);
   }
 
-  orderHome(strStartDat: Date|string|number, monthEn: Date|string|number, data: HomeTime[]) {
-    let idU = 2;
-    let idH = 4;
-    // let idU = localStorage.getItem("idUser");
-    // let idH = localStorage.getItem("idHome");
+  orderHome(strStartDat: Date | string | number, monthEn: Date | string | number, data: HomeTime[],idU:number|string,idH:number|string) {
+
 
     let strStartDate = new Date(strStartDat)
     let monthEnd = new Date(monthEn)
@@ -59,8 +55,8 @@ export class HomeTimeService {
     console.log(strStartDat)
     console.log(monthEn)
     // Check ngày tháng nhập vào
-    if ((monthEnd < now)||(strStartDate < now) ) {
-        alert("Bạn đã chọn ngày nhỏ hơn ngày hiện tại, Xin mời nhập lại!")
+    if ((monthEnd < now) || (strStartDate < now)) {
+      alert("Bạn đã chọn ngày nhỏ hơn ngày hiện tại, Xin mời nhập lại!")
     } else if (monthEnd <= strStartDate) {
       alert("Bạn đã chọn ngày nhận phòng nhỏ hơn hoặc bằng ngày trả phòng, Xin mời nhập lại!");
     } else if (monthEnd > strStartDate) {
@@ -73,6 +69,7 @@ export class HomeTimeService {
       // let data:HomeTime [];
       // @ts-ignore
       data = this.searchByHome(idH)
+      console.log(data+"22222222222222222222222")
       if (data.length > 0) {
         console.log("aaaaaaaaaaaaaaaaaaaa")
         // console.log(strStartDate.getMilliseconds())
@@ -116,9 +113,11 @@ export class HomeTimeService {
             }
           }
           console.log(order);
+
           // @ts-ignore
-          this.saveOrder(this.order)
-          alert("Thuê thoải mái đeee");
+          this.saveOrder(order).subscribe(() => {
+            alert("Thuê thoải mái đeee !!!")
+          })
 
         }
       } else {
@@ -137,13 +136,15 @@ export class HomeTimeService {
         console.log(order);
 
         // @ts-ignore
-        this.saveOrder(this.order)
-        alert("Thuê thoải mái đeee !!!")
+        this.saveOrder(order).subscribe(() => {
+          alert("Thuê thoải mái đeee !!!")
+        })
       }
       //   }
       // })
     }
   }
+
   // getDiffToNow(diff:Date|string|number):string{
   //
   // }

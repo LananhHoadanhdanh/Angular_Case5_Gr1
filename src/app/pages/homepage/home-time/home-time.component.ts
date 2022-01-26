@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {HomeTime} from "../../../models/home-time";
 import {HomeTimeService} from "../../../services/home-time.service";
 import {ActivatedRoute, Router} from "@angular/router";
@@ -13,7 +13,8 @@ export class HomeTimeComponent implements OnInit {
 // @ts-ignore
   homeTimes: HomeTime[];
   currentUser = localStorage.getItem("currentUser");
-
+// @ts-ignore
+  @Input() idH?:string;
   constructor(private homeTimeService: HomeTimeService, private activatedRoute: ActivatedRoute,
               private router: Router,
               private authenticationService: AuthenticationService) {
@@ -28,6 +29,8 @@ export class HomeTimeComponent implements OnInit {
     let a: string = document.getElementById("monthStart").value;
     // @ts-ignore
     let b: string = document.getElementById("monthEnd").value;
-    this.homeTimeService.orderHome(a, b, this.homeTimes)
+    let idU = localStorage.getItem("USERID");
+    // @ts-ignore
+    this.homeTimeService.orderHome(a, b, this.homeTimes,idU,this.idH)
   }
 }
