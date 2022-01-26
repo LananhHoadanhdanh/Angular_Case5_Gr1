@@ -13,6 +13,8 @@ import { RegisterComponent } from './pages/register/register.component';
 import {HomepageModule} from "./pages/homepage/homepage.module";
 import { LoginSuccessComponent } from './pages/login-success/login-success.component';
 import { HomeComponent } from './pages/homepage/home/home.component';
+import { HomeTimeComponent } from './pages/homepage/home-time/home-time.component';
+import { OrderComponent } from './pages/order/order.component';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { HomeComponent } from './pages/homepage/home/home.component';
     LoginComponent,
     RegisterComponent,
     LoginSuccessComponent,
+    RegisterComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +38,7 @@ import { HomeComponent } from './pages/homepage/home/home.component';
     AdminAuthGuard,
     AuthGuard
   ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

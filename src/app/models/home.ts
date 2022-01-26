@@ -11,6 +11,7 @@ export interface Home {
   showerRoom?: string;
   description?: string;
   price?: string;
+  bathroom?: string;
   statusHome?: StatusHome;
   user?: User;
   numberOfTurns?: string;

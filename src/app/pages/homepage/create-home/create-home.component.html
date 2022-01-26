@@ -1,0 +1,97 @@
+<div class="new-customers mb-50">
+  <div>
+    <div class="login-account p-30 box-shadow">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6"><br>
+          <h5 class="mb-50 text-center f1">CHO THUÊ</h5>
+          <form [formGroup]="houseForm" (submit)="saveAll()">
+            <div class="col-sm-6">
+              <input class="f1" type="text" style="font-family: 'Comforter', cursive;
+                                                font-family: 'Open Sans', sans-serif;" placeholder="Tên nhà" formControlName="name"
+                     id="username">
+            </div>
+            <div class="col-sm-6">
+              <input class="f1" style="font-family: 'Comforter', cursive;
+                                                font-family: 'Open Sans', sans-serif;" type="text" placeholder="Địa chỉ" formControlName="address"
+                     id="address">
+            </div>
+            <div class="col-sm-6 f1" id="category">
+              <select class="custom-select-2 f1" formControlName="categoryId">
+                <option value="">Thể loại</option>
+                <option *ngFor="let c of categories" value="{{c.id}}">{{c.name}}</option>
+              </select>
+            </div>
+            <div class="col-sm-6">
+              <input class="f1" type="text" style="font-family: 'Comforter', cursive;
+                                                font-family: 'Open Sans', sans-serif;" placeholder="Số phòng ngủ"
+                     id="bedroom" formControlName="bedroom">
+            </div>
+            <div class="col-sm-6">
+              <input class="f1" type="text" style="font-family: 'Comforter', cursive;
+                                                font-family: 'Open Sans', sans-serif;" placeholder="Số phòng tắm"
+                     id="showerRoom" formControlName="bathroom">
+            </div>
+            <div class="col-sm-6">
+              <input class="f1" type="text" style="font-family: 'Comforter', cursive;
+                                                font-family: 'Open Sans', sans-serif;" placeholder="Giá cho thuê"
+                     id="price" formControlName="price">
+            </div>
+            <input class="f1" type="text" placeholder="Diện tích" id="area" formControlName="area">
+            <input class="f1" type="text" placeholder="Mô tả" id="description" formControlName="description">
+
+            <div class="col-sm-3">Ảnh đại diện</div>
+            <div class="form-group col-12">
+              <input type="file"
+                     #userPhoto
+                     (change)="onFileSelected($event, 'avatar')"
+                     name="avatar" autocomplete="off"/>
+            </div>
+            <div class="col-sm-3">Ảnh phỏng ngủ</div>
+            <div class="form-group col-12">
+              <input type="file"
+                     #userPhoto
+                     (change)="onFileSelected($event, 'bedImg')"
+                     name="bedImg" autocomplete="off"/>
+            </div>
+            <div class="col-sm-3">Ảnh phòng khách</div>
+            <div class="form-group col-12">
+              <input type="file"
+                     #userPhoto
+                     (change)="onFileSelected($event, 'livingImg')"
+                     name="livingImg" autocomplete="off"/>
+            </div>
+            <div class="col-sm-3">Ảnh nhà bếp</div>
+            <div class="form-group col-12">
+              <input type="file"
+                     #userPhoto
+                     (change)="onFileSelected($event, 'kitchenImg')"
+                     name="kitchenImg" autocomplete="off"/>
+            </div>
+            <div class="col-sm-3">Ảnh nhà tắm</div>
+            <div class="form-group col-12">
+              <input type="file"
+                     #userPhoto
+                     (change)="onFileSelected($event, 'bathImg')"
+                     name="bathImg" autocomplete="off"/>
+            </div>
+
+            <button class="submit-btn-1 mt-20 f1" style="margin-right: 5px">Lưu Lại</button>
+            <button class="submit-btn-1 mt-20 f1" (click)="back()">Quay Lại</button>
+          </form>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<div class="form-group col-12">-->
+<!--  <input type="file"-->
+<!--         id="file"-->
+<!--         #userPhoto-->
+<!--         (change)="onFileSelected($event)"-->
+<!--         name="image"-->
+<!--         autocomplete="off"-->
+<!--  />-->
+<!--</div>-->
