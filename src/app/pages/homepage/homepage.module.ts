@@ -5,7 +5,7 @@ import { HomepageRoutingModule } from './homepage-routing.module';
 import {ListHomeComponent} from "./list-home/list-home.component";
 import {HomeDetailComponent} from "./home-detail/home-detail.component";
 import {HomeComponent} from "./home/home.component";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { CreateHomeComponent } from './create-home/create-home.component';
 import {HomeTimeComponent} from "./home-time/home-time.component";
 
@@ -22,6 +22,7 @@ import {HomeTimeComponent} from "./home-time/home-time.component";
     CommonModule,
     HomepageRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class HomepageModule { }

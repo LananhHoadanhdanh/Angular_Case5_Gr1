@@ -7,9 +7,13 @@ const API_URL = 'http://localhost:8080/api/comments'
   providedIn: 'root'
 })
 export class CommentService {
-
   constructor(private http: HttpClient) { }
 
+  saveCom( comment:Comment){
+    console.log(comment)
+    return this.http.post<Comment>(API_URL,comment)
+    alert("das")
+  }
   // @ts-ignore
   getAllByHome(idH) {
     return this.http.get<Comment[]>(API_URL + '?idH=' + idH)

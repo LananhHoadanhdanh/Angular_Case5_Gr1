@@ -329,7 +329,8 @@
             <div class="pro-details-big-image">
               <div class="tab-content" *ngFor=" let img of images,index as i">
                 <div role="tabpanel" class="tab-pane fade in active" id="pro-{{i}}">
-                  <a href="../../../../assets/images/{{img.links}}" data-lightbox="image-1" data-title="Sheltek Properties - {{i+1}}" >
+                  <a href="../../../../assets/images/{{img.links}}" data-lightbox="image-1"
+                     data-title="Sheltek Properties - {{i+1}}">
                     <img src="../../../../assets/images/{{img.links}}" alt="">
                   </a>
                 </div>
@@ -340,35 +341,35 @@
 
           <div id="orderInformation"></div>
 
-<app-home-time [idH]="home?.id"></app-home-time>
-<!--          <router-outlet></router-outlet>-->
-<!--          <div class="row">-->
-<!--            <div class="col-sm-3 col-xs-12">-->
+          <app-home-time [idH]="home?.id"></app-home-time>
+          <!--          <router-outlet></router-outlet>-->
+          <!--          <div class="row">-->
+          <!--            <div class="col-sm-3 col-xs-12">-->
 
-<!--              <div class="row">-->
-<!--                <p class="birth f1"><strong>Ngày nhận phòng: </strong></p>-->
-<!--                <div style="width: 100% !important;" class="form-group col-sm-3 col-xs-6">-->
-<!--                  <label for="monthStart" class="sr-only"></label>-->
-<!--                  <input id="monthStart" class="form-control input-group-lg" name="dateOfBirth" type="date">-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="col-sm-3 col-xs-12">-->
+          <!--              <div class="row">-->
+          <!--                <p class="birth f1"><strong>Ngày nhận phòng: </strong></p>-->
+          <!--                <div style="width: 100% !important;" class="form-group col-sm-3 col-xs-6">-->
+          <!--                  <label for="monthStart" class="sr-only"></label>-->
+          <!--                  <input id="monthStart" class="form-control input-group-lg" name="dateOfBirth" type="date">-->
+          <!--                </div>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--            <div class="col-sm-3 col-xs-12">-->
 
-<!--              <div class="row">-->
-<!--                <p class="birth f1"><strong>Ngày trả phòng</strong></p>-->
-<!--                <div style="width: 100% !important;" class="form-group col-sm-3 col-xs-6">-->
-<!--                  <label for="monthEnd" class="sr-only"></label>-->
-<!--                  <input id="monthEnd" class="form-control input-group-lg" name="dateOfBirth" type="date">-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="col-sm-5 col-xs-12">-->
-<!--              <div class="find-home-item mb-0-xs">-->
-<!--                <button class=" f1 btn-primary " style="width: 110px; height: 40px; border-radius: 7%" onclick="orderHome()">Đặt thuê</button>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
+          <!--              <div class="row">-->
+          <!--                <p class="birth f1"><strong>Ngày trả phòng</strong></p>-->
+          <!--                <div style="width: 100% !important;" class="form-group col-sm-3 col-xs-6">-->
+          <!--                  <label for="monthEnd" class="sr-only"></label>-->
+          <!--                  <input id="monthEnd" class="form-control input-group-lg" name="dateOfBirth" type="date">-->
+          <!--                </div>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--            <div class="col-sm-5 col-xs-12">-->
+          <!--              <div class="find-home-item mb-0-xs">-->
+          <!--                <button class=" f1 btn-primary " style="width: 110px; height: 40px; border-radius: 7%" onclick="orderHome()">Đặt thuê</button>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--          </div>-->
 
 
           <!-- pro-details-short-info -->
@@ -414,38 +415,62 @@
           <!-- pro-details-description -->
         </div>
         <div class="pro-details-description mb-50">
-          <p><span data-placement="top" data-toggle="tooltip" data-original-title="The name you can trust" class="tooltip-content">Sheltek</span> is  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna iqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut quipx ea codo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolo</p>
-          <p>Sheltek is the Best  should be the consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lore magna iqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacm emod tempor incididunt ut labore lore magna iqua. Ut enim ad minim veniamco laboris nisi ut aliqu</p>
-          <p>Sheltek is the Best  should be the consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lore magna iqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacm</p>
+          <p><span data-placement="top" data-toggle="tooltip" data-original-title="The name you can trust"
+                   class="tooltip-content">Sheltek</span> is ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna iqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut quipx ea codo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolo</p>
+          <p>Sheltek is the Best should be the consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            lore magna iqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacm
+            emod tempor incididunt ut labore lore magna iqua. Ut enim ad minim veniamco laboris nisi ut aliqu</p>
+          <p>Sheltek is the Best should be the consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            lore magna iqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            eacm</p>
         </div>
         <!-- pro-details-feedback -->
         <div class="pro-details-feedback mb-40" id="comment">
 
         </div>
+
+
         <!-- agent-review -->
         <div class="pro-details-agent-review">
           <div class="row">
             <div class="media" *ngFor="let cmt of comments">
               <a class="media-left" href="#">
-                <img width="81px" height="72px" src="https://thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-avatar-trang-cho-nam-va-con-than-lan.jpg" alt="">
+                <img width="81px" height="72px"
+                     src="https://thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-avatar-trang-cho-nam-va-con-than-lan.jpg"
+                     alt="">
               </a>
               <div class="media-body">
-                <p class="media-heading" ><a class="f1 f5" href="#" style="font-size: 20px" > Tài khoản: {{cmt.user?.username}} </a></p>
+                <p class="media-heading"><a class="f1 f5" href="#" style="font-size: 20px"> Tài
+                  khoản: {{cmt.user?.username}} </a></p>
                 <p class="f1"><span class="f1 f4" style="font-size: 20px">Lúc: {{cmt.time}}</span>{{cmt.content}}</p>
               </div>
             </div>
             <div class="col-md-7  col-sm-7 col-xs-12">
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
               <div class="leave-review">
                 <h5 class="f1">Bình luận của bạn</h5>
-                <form action="#">
 
-                  <input type="text" id="contentComment">
-                  <button type="button" class="f1 submit-btn-1" onclick="comment()">BÌNH LUẬN</button>
+
+                <form  [formGroup]="commentForm" (submit)="saveComment()" >
+                  <textarea type="text" formControlName="content" ></textarea>
+                  <button type="submit" class="f1 submit-btn-1" >BÌNH LUẬN</button>
                 </form>
+
+
+
               </div>
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
             </div>
           </div>
         </div>
+
+
+
 
       </div>
       <div class="col-md-4">
@@ -461,7 +486,7 @@
                                   class="for-sale">{{hm.statusHome?.name}}</span>
                   <img src="../../../../assets/images/avatar/avt1.jpg" class="img-fluid"/>
                   <div class="flat-link">
-                    <a class="f1"  href="#" >Xem chi tiết</a>
+                    <a class="f1" href="#">Xem chi tiết</a>
                   </div>
                   <ul class="flat-desc">
                     <li>
