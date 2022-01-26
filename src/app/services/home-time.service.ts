@@ -41,10 +41,11 @@ export class HomeTimeService {
   }
 
   saveOrder(order: Order): Observable<Order> {
-    return this.httpClient.post(API_URL_ORDER, order);
+    console.log("gggggggggggg")
+    return this.httpClient.post<Order>(API_URL_ORDER, order);
   }
 
-  orderHome(strStartDat: Date, monthEn: Date, data: HomeTime[]) {
+  orderHome(strStartDat: Date|string|number, monthEn: Date|string|number, data: HomeTime[]) {
     let idU = 2;
     let idH = 4;
     // let idU = localStorage.getItem("idUser");
@@ -70,8 +71,8 @@ export class HomeTimeService {
       //   url: "http://localhost:8080/api/homeTimes/searchByHome/" + idH,
       //   success: function (data) {
       // let data:HomeTime [];
-      // // @ts-ignore
-      // data = this.searchByHome(idH)
+      // @ts-ignore
+      data = this.searchByHome(idH)
       if (data.length > 0) {
         console.log("aaaaaaaaaaaaaaaaaaaa")
         // console.log(strStartDate.getMilliseconds())
@@ -101,6 +102,8 @@ export class HomeTimeService {
             // orderEndDate.getFullYear()
           );
         } else {
+          console.log("ttttttttttttttttttttt")
+
           // Tạo order
           let order = {
             startDate: strStartDate,
@@ -120,6 +123,7 @@ export class HomeTimeService {
         }
       } else {
         // Tạo Order
+        console.log("fdfdfdfdfdf")
         let order = {
           startDate: strStartDate,
           endDate: monthEnd,
@@ -140,5 +144,8 @@ export class HomeTimeService {
       // })
     }
   }
+  // getDiffToNow(diff:Date|string|number):string{
+  //
+  // }
 
 }

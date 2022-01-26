@@ -13,7 +13,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import {HomepageModule} from "./pages/homepage/homepage.module";
 import { LoginSuccessComponent } from './pages/login-success/login-success.component';
 import { HomeComponent } from './pages/homepage/home/home.component';
-import { HomeTimeComponent } from './pages/home-time/home-time.component';
+import { HomeTimeComponent } from './pages/homepage/home-time/home-time.component';
 import { OrderComponent } from './pages/order/order.component';
 
 
@@ -25,7 +25,6 @@ import { OrderComponent } from './pages/order/order.component';
     RegisterComponent,
     LoginSuccessComponent,
     RegisterComponent,
-    HomeTimeComponent,
     OrderComponent
   ],
   imports: [
@@ -40,9 +39,7 @@ import { OrderComponent } from './pages/order/order.component';
     AuthGuard,
 
   ],
-  exports: [
-    HomeTimeComponent
-  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

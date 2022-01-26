@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {HomeTime} from "../../models/home-time";
-import {HomeTimeService} from "../../services/home-time.service";
+import {HomeTime} from "../../../models/home-time";
+import {HomeTimeService} from "../../../services/home-time.service";
 import {ActivatedRoute, Router} from "@angular/router";
-import {AuthenticationService} from "../../services/authentication.service";
+import {AuthenticationService} from "../../../services/authentication.service";
 
 @Component({
   selector: 'app-home-time',
@@ -20,17 +20,14 @@ export class HomeTimeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.homeTimeService.searchByHome(4).subscribe(res => {
-        this.homeTimes = res;
-      }
-    )
+
   }
 
   orderHo() {
     // @ts-ignore
-    let a: Date = +document.getElementById("monthStart").value;
+    let a: string = document.getElementById("monthStart").value;
     // @ts-ignore
-    let b: Date = +document.getElementById("monthEnd").value;
+    let b: string = document.getElementById("monthEnd").value;
     this.homeTimeService.orderHome(a, b, this.homeTimes)
   }
 }

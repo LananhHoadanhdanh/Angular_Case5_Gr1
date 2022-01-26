@@ -5,7 +5,7 @@ import {RegisterComponent} from "./pages/register/register.component";
 import {AdminAuthGuard} from "./helper/admin-auth-guard";
 import {AdminComponent} from "./pages/admin/admin.component";
 import {LoginSuccessComponent} from "./pages/login-success/login-success.component";
-import {HomeTimeComponent} from "./pages/home-time/home-time.component";
+import {HomeTimeComponent} from "./pages/homepage/home-time/home-time.component";
 
 const routes: Routes = [
   {
@@ -20,10 +20,6 @@ const routes: Routes = [
     path: 'homepage',
     component: LoginSuccessComponent,
     loadChildren: () => import('./pages/homepage/homepage.module').then(module => module.HomepageModule),
-    children: [{
-      path: 'hometime',
-      component: HomeTimeComponent
-    }]
   },
   {
     path: 'admin',
