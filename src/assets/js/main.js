@@ -4,7 +4,7 @@
     Author: http://devitems.com/
     Version: 1
     Design and Developed by: http://devitems.com/
-    NOTE: If you have any note put here. 
+    NOTE: If you have any note put here.
 
 */
 /*================================================
@@ -13,9 +13,9 @@
 	1. jQuery MeanMenu
 	2. wow js active
 	3. scrollUp jquery active
-    4. Nivo Slider 
+    4. Nivo Slider
     5. Price Slider
-	6. slick carousel 
+	6. slick carousel
     6. tooltip
     7. Service Carousel
     8. Agents Carousel
@@ -24,9 +24,9 @@
     11. Brand Carousel
     12. Blog Carousel
     13. counter
-    14. Background Toutube Video 
+    14. Background Toutube Video
     15. STICKY sticky-header
- 
+
 ======================================
 [ End table content ]
 ======================================*/
@@ -66,7 +66,7 @@
         boxRows: 4,
         animSpeed: 500,
         pauseTime: 5000,
-        prevText: 'p<br/>r<br/>e<br/>v', 
+        prevText: 'p<br/>r<br/>e<br/>v',
         nextText: 'n<br/>e<br/>x<br/>t',
         startSlide: 0,
         directionNav: true,
@@ -79,17 +79,17 @@
     /* ********************************************
         5. Price Slider
     ******************************************** */
-    $( "#slider-range" ).slider({
-        range: true,
-        min: 20,
-        max: 2500,
-        values: [ 80, 2000 ],
-        slide: function( event, ui ) {
-            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-        }
-    });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-    " - $" + $( "#slider-range" ).slider( "values", 1 ) ); 
+    // $( "#slider-range" ).slider({
+    //     range: true,
+    //     min: 20,
+    //     max: 2500,
+    //     values: [ 80, 2000 ],
+    //     slide: function( event, ui ) {
+    //         $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+    //     }
+    // });
+    // $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+    // " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
     /*************************
         6. tooltip
@@ -98,7 +98,7 @@
 
     /*************************
         7. Service Carousel
-    *************************/ 
+    *************************/
     $('.service-carousel').slick({
         arrows: false,
         dots: false,
@@ -114,7 +114,7 @@
     });
     /*************************
         8. Agents Carousel
-    *************************/ 
+    *************************/
     $('.agents-carousel').slick({
         arrows: false,
         dots: false,
@@ -131,7 +131,7 @@
 
     /*************************
         9. Testimonial Carousel
-    *************************/ 
+    *************************/
     $('.testimonial-carousel').slick({
         arrows: false,
         dots: true,
@@ -143,7 +143,7 @@
 
     /*************************
         10. Blog Carousel
-    *************************/ 
+    *************************/
     $('.blog-carousel').slick({
         arrows: false,
         dots: false,
@@ -160,7 +160,7 @@
 
     /*************************
         11. Brand Carousel
-    *************************/ 
+    *************************/
     $('.brand-carousel').slick({
         arrows: false,
         dots: false,
@@ -178,7 +178,7 @@
 
     /*************************
         12. Blog Carousel
-    *************************/ 
+    *************************/
     $('.pro-details-carousel').slick({
         arrows: false,
         dots: false,
@@ -195,14 +195,14 @@
 
     /*************************
         13. counter
-    *************************/ 
+    *************************/
     $('.counter').counterUp({
         delay: 10,
         time: 1000
     });
-    
+
     /* ********************************************
-        14. Background Toutube Video 
+        14. Background Toutube Video
     ******************************************** */
     $(".youtube-bg").YTPlayer({
         videoURL:"Sz_1tkcU0Co",
@@ -226,7 +226,7 @@
 ******************************************** */
     var hth = $('.header-top-bar').height();
     $(window).on('scroll', function() {
-        if ($(this).scrollTop() > hth){  
+        if ($(this).scrollTop() > hth){
             $('#sticky-header').addClass("sticky");
         }
         else{
