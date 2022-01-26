@@ -13,8 +13,9 @@ const API_URL_ORDER = 'http://localhost:8080/api/orders/'
 })
 export class HomeTimeService {
 
-  constructor(private httpClient: HttpClient ) {
+  constructor(private httpClient: HttpClient) {
   }
+
   listAllHomeTime(): Observable<HomeTime[]> {
     return this.httpClient.get<HomeTime[]>(API_URL);
   }
@@ -38,24 +39,27 @@ export class HomeTimeService {
   searchByHome(id: number): Observable<HomeTime[]> {
     return this.httpClient.get<HomeTime[]>(API_URL + `searchByHome/${id}`)
   }
-  saveOrder(order:Order):Observable<Order>{
-    return this.httpClient.post(API_URL_ORDER,order);
+
+  saveOrder(order: Order): Observable<Order> {
+    return this.httpClient.post(API_URL_ORDER, order);
   }
-  orderHome(strStartDate: Date, monthEnd: Date,data:HomeTime[]) {
+
+  orderHome(strStartDat: Date, monthEn: Date, data: HomeTime[]) {
     let idU = 2;
     let idH = 4;
     // let idU = localStorage.getItem("idUser");
     // let idH = localStorage.getItem("idHome");
 
-
+    let strStartDate = new Date(strStartDat)
+    let monthEnd = new Date(monthEn)
     let oneDay = 86400000;
     let now = new Date();
-    console.log(now);
-
-
+    console.log(now)
+    console.log(strStartDat)
+    console.log(monthEn)
     // Check ngày tháng nhập vào
-    if ((monthEnd < now) || (strStartDate < now)) {
-      alert("Bạn đã chọn ngày nhỏ hơn ngày hiện tại, Xin mời nhập lại!")
+    if ((monthEnd < now)||(strStartDate < now) ) {
+        alert("Bạn đã chọn ngày nhỏ hơn ngày hiện tại, Xin mời nhập lại!")
     } else if (monthEnd <= strStartDate) {
       alert("Bạn đã chọn ngày nhận phòng nhỏ hơn hoặc bằng ngày trả phòng, Xin mời nhập lại!");
     } else if (monthEnd > strStartDate) {
@@ -70,11 +74,11 @@ export class HomeTimeService {
       // data = this.searchByHome(idH)
       if (data.length > 0) {
         console.log("aaaaaaaaaaaaaaaaaaaa")
+        // console.log(strStartDate.getMilliseconds())
         let flag = true;
-        let i=strStartDate.getMilliseconds()
-        for (i ; i <= monthEnd.getMilliseconds(); i += oneDay) {
+        for (let i = strStartDate.getTime(); i <= monthEnd.getTime(); i += oneDay) {
           let orderDate = new Date(i);
-          console.log(orderDate+"xxxxxxxxxxxxxx");
+          console.log(orderDate + "xxxxxxxxxxxxxx");
           for (let j = 0; j < data.length; j++) {
             // @ts-ignore
             let bookingDate = (new Date(data[j].date));
@@ -96,8 +100,7 @@ export class HomeTimeService {
             // orderEndDate.getMonth() + " / " +
             // orderEndDate.getFullYear()
           );
-        }
-        else {
+        } else {
           // Tạo order
           let order = {
             startDate: strStartDate,

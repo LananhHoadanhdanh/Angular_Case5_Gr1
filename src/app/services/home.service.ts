@@ -16,6 +16,10 @@ export class HomeService {
     return this.http.get<Home[]>(API_URL)
   }
 
+  show5Home() {
+    return this.http.get<Home[]>(API_URL + '/find5HomeMostRated')
+  }
+
   // @ts-ignore
   getListImg(idH) {
     return this.http.get<Image[]>(API_URL + '/findAllImg?idH=' + idH)

@@ -11,6 +11,8 @@ import { AdminComponent } from './pages/admin/admin.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import {HomepageModule} from "./pages/homepage/homepage.module";
+import { LoginSuccessComponent } from './pages/login-success/login-success.component';
+import { HomeComponent } from './pages/homepage/home/home.component';
 import { HomeTimeComponent } from './pages/home-time/home-time.component';
 import { OrderComponent } from './pages/order/order.component';
 
@@ -21,13 +23,14 @@ import { OrderComponent } from './pages/order/order.component';
     AdminComponent,
     LoginComponent,
     RegisterComponent,
+    LoginSuccessComponent,
+    RegisterComponent,
     HomeTimeComponent,
     OrderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     HomepageModule
@@ -36,6 +39,9 @@ import { OrderComponent } from './pages/order/order.component';
     AdminAuthGuard,
     AuthGuard,
 
+  ],
+  exports: [
+    HomeTimeComponent
   ],
   bootstrap: [AppComponent]
 })

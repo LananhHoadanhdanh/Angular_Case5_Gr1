@@ -28,10 +28,9 @@ export class HomeTimeComponent implements OnInit {
 
   orderHo() {
     // @ts-ignore
-    let a: Date = document.getElementById("monthStart").value;
+    let a: Date = +document.getElementById("monthStart").value;
     // @ts-ignore
-    let b: Date = document.getElementById("monthEnd").value;
-    console.log(a)
+    let b: Date = +document.getElementById("monthEnd").value;
     this.homeTimeService.orderHome(a, b, this.homeTimes)
   }
 }

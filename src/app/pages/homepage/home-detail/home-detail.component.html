@@ -1,1 +1,498 @@
-<p>home-detail works!</p>
+<!--<section id="page-content" class="page-wrapper">-->
+<!--  &lt;!&ndash; PROPERTIES DETAILS AREA START &ndash;&gt;-->
+<!--  <div class="properties-details-area pt-115 pb-60">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-md-8">-->
+<!--          &lt;!&ndash; pro-details-image &ndash;&gt;-->
+<!--          <div class="pro-details-image mb-60">-->
+<!--            <div class="pro-details-big-image">-->
+<!--              <div class="tab-content">-->
+<!--                <div role="tabpanel" class="tab-pane fade in active" id="pro-1">-->
+<!--                  <a href="assets/images/avatar/phongbep.jpg" data-lightbox="image-1" data-title="Sheltek Properties - 1">-->
+<!--                    <img src="assets/images/avatar/phongbep.jpg" alt="">-->
+<!--                  </a>-->
+<!--                </div>-->
+<!--                <div role="tabpanel" class="tab-pane fade" id="pro-2">-->
+<!--                  <a href="assets/images/avatar/phongkhach.jpg" data-lightbox="image-1" data-title="Sheltek Properties - 2">-->
+<!--                    <img src="assets/images/avatar/phongkhach.jpg" alt="">-->
+<!--                  </a>-->
+<!--                </div>-->
+<!--                <div role="tabpanel" class="tab-pane fade" id="pro-3">-->
+<!--                  <a href="assets/images/avatar/phongngu.jpg" data-lightbox="image-1" data-title="Sheltek Properties - 3">-->
+<!--                    <img src="assets/images/avatar/phongngu.jpg" alt="">-->
+<!--                  </a>-->
+<!--                </div>-->
+<!--                <div role="tabpanel" class="tab-pane fade" id="pro-4">-->
+<!--                  <a href="assets/images/avatar/phongtam.jpg" data-lightbox="image-1" data-title="Sheltek Properties - 4">-->
+<!--                    <img src="assets/images/avatar/phongtam.jpg" alt="">-->
+<!--                  </a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="pro-details-carousel">-->
+<!--              <div *ngFor="let img of images">-->
+<!--                <div class="pro-details-item">-->
+<!--                  <a href="#pro-{{img.id}}" data-toggle="tab">-->
+<!--                    <img src="assets/images/{{img.links}}" alt="" style="width: 24%; float: left; margin-right: 1%"></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; pro-details-short-info &ndash;&gt;-->
+<!--          <div class="pro-details-short-info mb-60" style="margin-top: 40px">-->
+<!--            <div class="row">-->
+<!--              <div class="col-sm-6 col-xs-12">-->
+<!--                <div class="pro-details-condition">-->
+<!--                  <h5>Tình trạng</h5>-->
+<!--                  <div class="pro-details-condition-inner bg-gray">-->
+<!--                    <ul class="condition-list">-->
+<!--                      <li><img src="assets/images/icons/5.png" alt="">Diện tích 450 sqft</li>-->
+<!--                      <li><img src="assets/images/icons/6.png" alt="">5 Phòng ngủ</li>-->
+<!--                      <li><img src="assets/images/icons/7.png" alt="">3 Phòng tắm</li>-->
+<!--                      <li><img src="assets/images/icons/13.png" alt="">2 Nhà xe</li>-->
+<!--                      <li><img src="assets/images/icons/14.png" alt="">2 Nhà bếp</li>-->
+<!--                      <li>Giá tiền: </li>-->
+<!--                    </ul>-->
+<!--                    <p><img src="assets/images/icons/location.png" alt="">568 E 1st Ave, Ney Jersey, USA</p>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="col-sm-6 col-xs-12">-->
+<!--                <div class="pro-details-amenities">-->
+<!--                  <h5>Tiện ích</h5>-->
+<!--                  <div class="pro-details-amenities-inner bg-gray">-->
+<!--                    <ul class="amenities-list">-->
+<!--                      <li>Air Conditioning</li>-->
+<!--                      <li>Bedding</li>-->
+<!--                      <li>Balcony</li>-->
+<!--                      <li>Cable TV</li>-->
+<!--                      <li>Internet</li>-->
+<!--                      <li>Parking</li>-->
+<!--                      <li>Lift</li>-->
+<!--                      <li>Pool</li>-->
+<!--                      <li>Dishwasher</li>-->
+<!--                      <li>Toaster</li>-->
+<!--                    </ul>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; pro-details-description &ndash;&gt;-->
+<!--          <div class="pro-details-description mb-50">-->
+<!--            <p><span data-placement="top" data-toggle="tooltip" data-original-title="The name you can trust" class="tooltip-content">Sheltek</span> is  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna iqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut quipx ea codo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolo</p>-->
+<!--            <p>Sheltek is the Best  should be the consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lore magna iqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacm emod tempor incididunt ut labore lore magna iqua. Ut enim ad minim veniamco laboris nisi ut aliqu</p>-->
+<!--            <p>Sheltek is the Best  should be the consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lore magna iqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacm</p>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; pro-details-feedback &ndash;&gt;-->
+<!--          <div class="pro-details-feedback mb-40">-->
+<!--            <h5>3 Feedback</h5>-->
+<!--            &lt;!&ndash; media &ndash;&gt;-->
+<!--            <div class="media">-->
+<!--              <a class="media-left" href="#">-->
+<!--                <img src="assets/images/avatar/2.jpg" alt="">-->
+<!--              </a>-->
+<!--              <div class="media-body">-->
+<!--                <h6 class="media-heading"><a href="#">David Backhum</a></h6>-->
+<!--                <p><span>6 hour ago</span>There are some business lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu tempor inc ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudt </p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; media &ndash;&gt;-->
+<!--            <div class="media">-->
+<!--              <a class="media-left" href="#">-->
+<!--                <img src="assets/images/avatar/2.jpg" alt="">-->
+<!--              </a>-->
+<!--              <div class="media-body">-->
+<!--                <h6 class="media-heading"><a href="#">Saniya Mirza</a></h6>-->
+<!--                <p><span>8 hour ago</span>There are some business lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu tempor inc ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudt </p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; media &ndash;&gt;-->
+<!--            <div class="media">-->
+<!--              <a class="media-left" href="#">-->
+<!--                <img src="assets/images/avatar/3.jpg" alt="">-->
+<!--              </a>-->
+<!--              <div class="media-body">-->
+<!--                <h6 class="media-heading"><a href="#">Lionel Messi</a></h6>-->
+<!--                <p><span>10 hour ago</span>There are some business lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu tempor inc ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudt </p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; agent-review &ndash;&gt;-->
+<!--          <div class="pro-details-agent-review">-->
+<!--            <div class="row">-->
+<!--              &lt;!&ndash; single-agent &ndash;&gt;-->
+<!--              <div class="col-md-5 col-sm-5 col-xs-12">-->
+<!--                <div class="pro-details-agent">-->
+<!--                  <h5>Contact Agent</h5>-->
+<!--                  <div class="single-agent">-->
+<!--                    <div class="agent-image">-->
+<!--                      <img src="assets/images/agents/2.jpg" alt="">-->
+<!--                    </div>-->
+<!--                    <div class="agent-info">-->
+<!--                      <div class="agent-name">-->
+<!--                        <h5><a href="#">Eva Sharlin</a></h5>-->
+<!--                        <p>Real Estate Broker</p>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    <div class="agent-info-hover">-->
+<!--                      <div class="agent-name">-->
+<!--                        <h5><a href="#">Eva Sharlin</a></h5>-->
+<!--                        <p>Real Estate Broker</p>-->
+<!--                      </div>-->
+<!--                      <ul class="agent-address">-->
+<!--                        <li><img src="assets/images/icons/phone-2.png" alt="">+1245  785  659 </li>-->
+<!--                        <li><img src="assets/images/icons/mail-close.png" alt="">eva@gmail.com </li>-->
+<!--                      </ul>-->
+<!--                      <ul class="social-media">-->
+<!--                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
+<!--                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+<!--                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>-->
+<!--                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>-->
+<!--                      </ul>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              &lt;!&ndash; leave-massage &ndash;&gt;-->
+<!--              <div class="col-md-7  col-sm-7 col-xs-12">-->
+<!--                <div class="leave-review">-->
+<!--                  <h5>Leave a Review</h5>-->
+<!--                  <form action="#">-->
+<!--                    <input type="text" name="name" placeholder="Your name">-->
+<!--                    <input type="email" name="email" placeholder="Email here">-->
+<!--                    <textarea></textarea>-->
+<!--                    <button type="button" class="submit-btn-1">SUBMIT REVIEW</button>-->
+<!--                  </form>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-4">-->
+<!--          &lt;!&ndash; widget-featured-property &ndash;&gt;-->
+<!--          <aside class="widget widget-featured-property">-->
+<!--            <h5>Featured Property</h5>-->
+<!--            <div class="row">-->
+<!--              &lt;!&ndash; flat-item &ndash;&gt;-->
+<!--              <div class="col-md-12 col-sm-6 col-xs-12">-->
+<!--                <div class="flat-item">-->
+<!--                  <div class="flat-item-image">-->
+<!--                    <span class="for-sale">For Sale</span>-->
+<!--                    <a href="#"><img src="assets/images/flat/1.jpg" alt=""></a>-->
+<!--                    <div class="flat-link">-->
+<!--                      <a href="#">More Details</a>-->
+<!--                    </div>-->
+<!--                    <ul class="flat-desc">-->
+<!--                      <li>-->
+<!--                        <img src="assets/images/icons/4.png" alt="">-->
+<!--                        <span>450 sqft</span>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <img src="assets/images/icons/5.png" alt="">-->
+<!--                        <span>5</span>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <img src="assets/images/icons/6.png" alt="">-->
+<!--                        <span>3</span>-->
+<!--                      </li>-->
+<!--                    </ul>-->
+<!--                  </div>-->
+<!--                  <div class="flat-item-info">-->
+<!--                    <div class="flat-title-price">-->
+<!--                      <h5><a href="#">Masons de Villa </a></h5>-->
+<!--                      <span class="price">$52,350</span>-->
+<!--                    </div>-->
+<!--                    <p><img src="assets/images/icons/location.png" alt="">568 E 1st Ave, Ney Jersey</p>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              &lt;!&ndash; flat-item &ndash;&gt;-->
+<!--              <div class="col-md-12 col-sm-6 col-xs-12">-->
+<!--                <div class="flat-item">-->
+<!--                  <div class="flat-item-image">-->
+<!--                    <span class="for-sale">For Sale</span>-->
+<!--                    <a href="#"><img src="assets/images/flat/2.jpg" alt=""></a>-->
+<!--                    <div class="flat-link">-->
+<!--                      <a href="#">More Details</a>-->
+<!--                    </div>-->
+<!--                    <ul class="flat-desc">-->
+<!--                      <li>-->
+<!--                        <img src="assets/images/icons/4.png" alt="">-->
+<!--                        <span>450 sqft</span>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <img src="assets/images/icons/5.png" alt="">-->
+<!--                        <span>5</span>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <img src="assets/images/icons/6.png" alt="">-->
+<!--                        <span>3</span>-->
+<!--                      </li>-->
+<!--                    </ul>-->
+<!--                  </div>-->
+<!--                  <div class="flat-item-info">-->
+<!--                    <div class="flat-title-price">-->
+<!--                      <h5><a href="#">Masons de Villa </a></h5>-->
+<!--                      <span class="price">$52,350</span>-->
+<!--                    </div>-->
+<!--                    <p><img src="assets/images/icons/location.png" alt="">568 E 1st Ave, Ney Jersey</p>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              &lt;!&ndash; flat-item &ndash;&gt;-->
+<!--              <div class="col-md-12 hidden-sm col-xs-12">-->
+<!--                <div class="flat-item">-->
+<!--                  <div class="flat-item-image">-->
+<!--                    <span class="for-sale">For Sale</span>-->
+<!--                    <a href="#"><img src="assets/images/flat/3.jpg" alt=""></a>-->
+<!--                    <div class="flat-link">-->
+<!--                      <a href="#">More Details</a>-->
+<!--                    </div>-->
+<!--                    <ul class="flat-desc">-->
+<!--                      <li>-->
+<!--                        <img src="assets/images/icons/4.png" alt="">-->
+<!--                        <span>450 sqft</span>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <img src="assets/images/icons/5.png" alt="">-->
+<!--                        <span>5</span>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <img src="assets/images/icons/6.png" alt="">-->
+<!--                        <span>3</span>-->
+<!--                      </li>-->
+<!--                    </ul>-->
+<!--                  </div>-->
+<!--                  <div class="flat-item-info">-->
+<!--                    <div class="flat-title-price">-->
+<!--                      <h5><a href="#">Masons de Villa </a></h5>-->
+<!--                      <span class="price">$52,350</span>-->
+<!--                    </div>-->
+<!--                    <p><img src="assets/images/icons/location.png" alt="">568 E 1st Ave, Ney Jersey</p>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </aside>-->
+<!--          &lt;!&ndash; widget-video &ndash;&gt;-->
+<!--          <aside class="widget widget-video">-->
+<!--            <h5>Take A Look</h5>-->
+<!--            <div class="properties-video">-->
+<!--              <div class="embed-responsive embed-responsive-16by9">-->
+<!--                &lt;!&ndash; <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/40934652"></iframe> &ndash;&gt;-->
+<!--                <iframe src="https://player.vimeo.com/video/117765418?title=0&byline=0&portrait=0" allowfullscreen></iframe>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </aside>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  &lt;!&ndash; PROPERTIES DETAILS AREA END &ndash;&gt;-->
+
+<!--  &lt;!&ndash; SUBSCRIBE AREA START &ndash;&gt;-->
+<!--  <div class="subscribe-area bg-blue call-to-bg plr-140 ptb-50">-->
+<!--    <div class="container-fluid">-->
+<!--      <div class="row">-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--          <div class="section-title text-white">-->
+<!--            <h3>SUBSCRIBE</h3>-->
+<!--            <h2 class="h1">NEWSLETTER</h2>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-9 col-sm-8 col-xs-12">-->
+<!--          <div class="subscribe">-->
+<!--            <form action="#">-->
+<!--              <input type="text" name="subscribe" placeholder="Enter yur email here...">-->
+<!--              <button type="submit" value="send">Send</button>-->
+<!--            </form>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  &lt;!&ndash; SUBSCRIBE AREA END &ndash;&gt;-->
+<!--</section>-->
+
+<div class="properties-details-area pt-115 pb-60">
+  <div class="container">
+    <div class="row">
+      <button class="btn-primary" onclick="back1()" style="width: 100px">Quay lại</button>
+    </div>
+    <div class="row mt-5 ml-5">
+      <div class="col-md-8">
+        <div class="row">
+          <!--                             pro-details-image -->
+          <div class="pro-details-image mb-60">
+            <div class="pro-details-big-image">
+              <div class="tab-content" *ngFor=" let img of images,index as i">
+                <div role="tabpanel" class="tab-pane fade in active" id="pro-{{i}}">
+                  <a href="../../../../assets/images/{{img.links}}" data-lightbox="image-1" data-title="Sheltek Properties - {{i+1}}" >
+                    <img src="../../../../assets/images/{{img.links}}" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="orderInformation"></div>
+
+
+          <router-outlet></router-outlet>
+<!--          <div class="row">-->
+<!--            <div class="col-sm-3 col-xs-12">-->
+
+<!--              <div class="row">-->
+<!--                <p class="birth f1"><strong>Ngày nhận phòng: </strong></p>-->
+<!--                <div style="width: 100% !important;" class="form-group col-sm-3 col-xs-6">-->
+<!--                  <label for="monthStart" class="sr-only"></label>-->
+<!--                  <input id="monthStart" class="form-control input-group-lg" name="dateOfBirth" type="date">-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-sm-3 col-xs-12">-->
+
+<!--              <div class="row">-->
+<!--                <p class="birth f1"><strong>Ngày trả phòng</strong></p>-->
+<!--                <div style="width: 100% !important;" class="form-group col-sm-3 col-xs-6">-->
+<!--                  <label for="monthEnd" class="sr-only"></label>-->
+<!--                  <input id="monthEnd" class="form-control input-group-lg" name="dateOfBirth" type="date">-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-sm-5 col-xs-12">-->
+<!--              <div class="find-home-item mb-0-xs">-->
+<!--                <button class=" f1 btn-primary " style="width: 110px; height: 40px; border-radius: 7%" onclick="orderHome()">Đặt thuê</button>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+
+          <!-- pro-details-short-info -->
+          <div class="pro-details-short-info mb-60">
+            <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                <div class="pro-details-condition">
+                  <h5 class="f1 f6">Tình trạng</h5>
+                  <div class="pro-details-condition-inner bg-gray" id="detail">
+                    <ul class="f1 condition-list">
+                      <li><img src="../../../../assets/images/icons/13.png" alt="">Diện tích: {{home?.area}}</li>
+                      <li><img src="../../../../assets/images/icons/5.png" alt="">Phòng ngủ: {{home?.bedroom}}</li>
+                      <li><img src="../../../../assets/images/icons/6.png" alt="">Phòng tắm: {{home?.showerRoom}}</li>
+                      <li><img src="../../../../assets/images/icons/7.png" alt="">Ga-ra: 1</li>
+                      <li><img src="../../../../assets/images/icons/14.png" alt="">Phòng bếp :2</li>
+                      <li>Giá: {{home?.price}} VNĐ</li>
+                    </ul>
+                    <p><img src="../../../../assets/images/icons/location.png" alt=""> {{home?.address}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <div class="pro-details-amenities">
+                  <h5 class="f1 f6">Tiện nghi</h5>
+                  <div class="pro-details-amenities-inner bg-gray">
+                    <ul class="f1 amenities-list">
+                      <li>Điều hòa nhiệt độ</li>
+                      <li>Chăn ga gối đệm</li>
+                      <li>Ban công</li>
+                      <li>Truyền hình cáp</li>
+                      <li>Internet</li>
+                      <li>Chỗ đậu xe</li>
+                      <li>Hồ bơi</li>
+                      <li>Hồ bơi</li>
+                      <li>Máy rửa chén</li>
+                      <li>Máy nướng bánh mì</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pro-details-description -->
+        </div>
+        <div class="pro-details-description mb-50">
+          <p><span data-placement="top" data-toggle="tooltip" data-original-title="The name you can trust" class="tooltip-content">Sheltek</span> is  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna iqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut quipx ea codo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolo</p>
+          <p>Sheltek is the Best  should be the consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lore magna iqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacm emod tempor incididunt ut labore lore magna iqua. Ut enim ad minim veniamco laboris nisi ut aliqu</p>
+          <p>Sheltek is the Best  should be the consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lore magna iqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacm</p>
+        </div>
+        <!-- pro-details-feedback -->
+        <div class="pro-details-feedback mb-40" id="comment">
+
+        </div>
+        <!-- agent-review -->
+        <div class="pro-details-agent-review">
+          <div class="row">
+            <div class="media" *ngFor="let cmt of comments">
+              <a class="media-left" href="#">
+                <img width="81px" height="72px" src="https://thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-avatar-trang-cho-nam-va-con-than-lan.jpg" alt="">
+              </a>
+              <div class="media-body">
+                <p class="media-heading" ><a class="f1 f5" href="#" style="font-size: 20px" > Tài khoản: {{cmt.user?.username}} </a></p>
+                <p class="f1"><span class="f1 f4" style="font-size: 20px">Lúc: {{cmt.time}}</span>{{cmt.content}}</p>
+              </div>
+            </div>
+            <div class="col-md-7  col-sm-7 col-xs-12">
+              <div class="leave-review">
+                <h5 class="f1">Bình luận của bạn</h5>
+                <form action="#">
+
+                  <input type="text" id="contentComment">
+                  <button type="button" class="f1 submit-btn-1" onclick="comment()">BÌNH LUẬN</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <!-- widget-featured-property -->
+        <aside class="widget widget-featured-property">
+          <h5 class="f1">5 căn nhà có đánh giá cao nhất</h5>
+          <div class="row" id="list5Home" *ngFor="let hm of fiveHome">
+            <div class="col-md-12 col-sm-6 col-xs-12">
+              <div class="flat-item">
+                <div class="flat-item-image">
+                            <span style="  font-family: 'Comforter', cursive;
+                             font-family: 'Open Sans', sans-serif;"
+                                  class="for-sale">{{hm.statusHome?.name}}</span>
+                  <img src="../../../../assets/images/avatar/avt1.jpg" class="img-fluid"/>
+                  <div class="flat-link">
+                    <a class="f1"  href="#" >Xem chi tiết</a>
+                  </div>
+                  <ul class="flat-desc">
+                    <li>
+                      <img src="assets/images/icons/4.png" alt="">
+                      <span class="f1">{{hm.description}}</span>
+                    </li>
+                    <li>
+                      <img src="assets/images/icons/5.png" alt="">
+                      <span class="f1">{{hm.bedroom}}</span>
+                    </li>
+                    <li>
+                      <img src="assets/images/icons/6.png" alt="">
+                      <span class="f1">{{hm.showerRoom}}</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="flat-item-info">
+                  <div class="flat-title-price">
+                    <h5><a class="f1" href="properties-details.html">{{hm.name}}</a></h5>
+                    <span class="f1 price">{{hm.price}}VNĐ</span>
+                  </div>
+                  <p class="f1"><img src="assets/images/icons/location.png" alt="">{{hm.address}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- widget-video -->
+        <aside class="widget widget-video">
+        </aside>
+      </div>
+    </div>
+  </div>
+</div>
